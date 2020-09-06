@@ -14,7 +14,7 @@ import java.util.ArrayDeque;
 public class MyUserDetailsService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
-          return new User("foo","password", new ArrayDeque<>());
+          return new User("username","password", new ArrayDeque<>());
     }
     @Bean
     public PasswordEncoder passwordEncoder(){
