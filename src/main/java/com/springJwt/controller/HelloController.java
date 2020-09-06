@@ -29,7 +29,9 @@ public class HelloController {
     @Autowired
     private MyUserDetailsService userDetailsService;
 
+    @Autowired
     private JwtUtil jwtTokenUtil;
+
     @RequestMapping({"/hello"})
     public String hello() {
         return "hello word";
